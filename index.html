@@ -8,61 +8,146 @@
     <meta description="Sua agenda pessoal">
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap" rel="stylesheet">
     <title>Agenda pessoal</title>
 </head>
 <body>
     
     <main class="main-container">
         <div class="perfil">
-            <div class="container">
+
+            <div class="info-pessoal">
                 <img src="assets/imagens/image-jeremy.png" alt="foto de perfil do Jeremy">
+                <p>Report for</p>
+                <h1>Jeremy Hobson</h1>
             </div>
-            
-            <p>Report for</p>
-            <h1>Jeremy Hobson</h1>
-            <p>Daily</p>
-            <p>Weekly</p>
-            <p>Monthly</p>
+           
+            <div class="tempo">
+                <button>Daily</button>
+                <button>Weekly</button>
+                <button>Monthly</button>
+            </div>
         </div>
 
-     <div class="teste">
-        <div class="ficheiro">
-            <h2>Work</h2>
-            <span class="horas" id="hora-trabalho"></span>
-            <span class="horas-anterior" id="hora-anterior-trabalho"></span>   
-        </div>
+        <div class="container-ficheiro">
 
-        <div class="ficheiro">
-            <h2>Play</h2>
-            <span class="horas" id="hora-jogo"></span>
-            <span class="horas-anterior" id="hora-anterior-jogo"></span>  
-        </div>
+            <div class="ficheiro ficheiro-work"> 
 
-        <div class="ficheiro">
-            <h2>Study</h2>
-            <span class="horas" id="hora-estudo"></span>
-            <span class="horas-anterior" id="hora-anterior-estudo"></span>   
-        </div>
-            
+                <img src="assets\imagens\icon-work.svg" alt="trabalho" class="icon-imagem">
 
-        <div class="ficheiro">
-            <h2>Exercise</h2>
-            <span class="horas" id="hora-exercicio"></span>
-            <span class="horas-anterior" id="hora-anterior-exercicio"></span>   
-        </div>
+                <div class="caixa-geral">
+                    <header class="header-atividade">
+                        <h2>Work</h2>
+                        <img src="assets\imagens\icon-ellipsis.svg " alt="potinhos">
+                    </header>
+                    <div class="atividade">
+                        <h3 class="horas" id="hora-trabalho">32hrs</h3>
+                        <div class="atividade-anterior">
+                            <p>Last week</p>
+                            <p>36 hrs</p>
+                        </div>
+                    </div>  
+            </div>
+            </div>
+    
+            <div class="ficheiro ficheiro-play">
+                
+                <img src="assets\imagens\icon-play.svg" alt="jogo" class="icon-imagem">
+                
+                <div class="caixa-geral">
+                    <header class="header-atividade">
+                        <h2>Play</h2>
+                        <img src="assets\imagens\icon-ellipsis.svg" alt="potinhos">
+                    </header>
+                    <div class="atividade">
+                        <h3 class="horas" id="hora-jogo">10hrs</h3>
+                        <div class="atividade-anterior">
+                            <p>Last week</p>
+                            <p>8hrs</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+    
+            <div class="ficheiro ficheiro-study">
+               
+                <img src="assets\imagens\icon-study.svg" alt="estudo" class="icon-imagem">
 
-        <div class="ficheiro">
-            <h2>Social</h2>
-            <span class="horas" id="hora-social"></span>
-            <span class="horas-anterior" id="hora-anterior-social"></span>  
-        </div>
+                <div class="caixa-geral">
+                    <header class="header-atividade">
+                        <h2>Study</h2>
+                        <img src="assets\imagens\icon-ellipsis.svg" alt="potinhos">
+                    </header>
+                    <div class="atividade">
+                        <h3 class="horas" id="hora-jogo">4hrs</h3>
+                        <div class="atividade-anterior">
+                            <p>Last week</p>
+                            <p>7hrs</p>
+                        </div>
+                    </div>  
+                </div> 
+            </div>
+                
+    
+            <div class="ficheiro ficheiro-exercise">
+                
+                <img src="assets\imagens\icon-exercise.svg" alt="exercicio" class="icon-imagem">
+                
+                <div class="caixa-geral">
+                    <header class="header-atividade">
+                        <h2>Exercise</h2>
+                        <img src="assets\imagens\icon-ellipsis.svg" alt="potinhos">
+                    </header>
+                    <div class="atividade">
+                        <h3 class="horas" id="hora-jogo">4hrs</h3>
+                        <div class="atividade-anterior">
+                            <p>Last week</p>
+                            <p>5hrs</p>
+                        </div>
+                    </div>  
+                </div>   
+            </div>
+    
+            <div class="ficheiro ficheiro-social">
 
-        <div class="ficheiro">
-            <h2>Self Care</h2>
-            <span class="horas" id="hora-cuidado"></span>
-            <span class="horas-anterior" id="hora-anterior-cuidado"></span>  
+                <img src="assets\imagens\icon-social.svg" alt="social" class="icon-imagem"> 
+                
+                <div class="caixa-geral">
+                    <header class="header-atividade">
+                        <h2>Social</h2>
+                        <img src="assets\imagens\icon-ellipsis.svg" alt="potinhos">
+                    </header>
+                    <div class="atividade">
+                        <h3 class="horas" id="hora-jogo">5hrs</h3>
+                        <div class="atividade-anterior">
+                            <p>Last week</p>
+                            <p>10hrs</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
+    
+            <div class="ficheiro ficheiro-self-care">
+
+                <img src="assets\imagens\icon-self-care.svg"  alt="cuidado" class="icon-imagem">
+
+                <div class="caixa-geral">
+                    <header class="header-atividade">
+                        <h2>Self Care</h2>
+                        <img src="assets\imagens\icon-ellipsis.svg" alt="potinhos">
+                    </header>
+                    <div class="atividade">
+                        <h3 class="horas" id="hora-jogo">2hrs</h3>
+                        <div class="atividade-anterior">
+                            <p>Last week</p>
+                            <p>2hrs</p>
+                        </div>
+                    </div>  
+                </div>
+            </div>
         </div>
-    </div>
     </main>
     
 </body>

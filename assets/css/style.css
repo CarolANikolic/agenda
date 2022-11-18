@@ -1,32 +1,177 @@
+:root {
+
+    /* Cores gerais */
+    --corBranca: #ffffff;
+    --azulMaisEscuro: hsl(226, 43%, 10%);
+    --azulEscuro: hsl(235, 46%, 20%);
+    --azulRocheado: hsl(235, 45%, 61%);
+    --azulPalido: hsl(236, 100%, 87%);
+
+    /* Cores elementos */
+    --vermelhoClaro: hsl(15, 100%, 70%); /*work*/
+    --azulFraco: hsl(195, 74%, 62%); /*play*/
+    --rosado: hsl(348, 100%, 68%); /*study*/
+    --verdeLimao: hsl(145, 58%, 55%); /*exercize*/
+    --purple: hsl(264, 64%, 52%); /*social*/
+    --laranjaFraco: hsl(43, 84%, 65%); /*seld-care*/
+}
+
 html {
-    background: #0f1424;
+    background: var(--azulMaisEscuro);
+    font-family: 'Rubik', sans-serif;
 }
 
 .main-container {
-    background: white;
     display: flex;
     width: 80%;
     margin: 0 auto;
-    margin-top: 10%;  
+    margin-top: 5%;  
 }
 
-.teste {
-    background: green;
+.perfil {
+    display: flex;
+    flex-direction: column;
+    background:hsl(249, 79%, 57%);
+    border-radius: 10px;
+}
+
+.perfil img {
+    width: 40%;
+    padding: 10% 0 20% 10%;
+    /* border: 2px solid var(--corBranca); */
+}
+
+.info-pessoal p {
+    font-weight: 400;
+    color: var(--azulRocheado);
+    padding-left: 10%
+}
+
+.info-pessoal h1 {
+    font-weight: 300;
+    color: var(--corBranca);
+    padding: 2% 0 20% 10%;
+    font-size: 2em;
+}
+
+.tempo {
+    display: flex;
+    flex-direction: column;
+    background: var(--azulEscuro);
+    height: 100%;
+    border-radius: 10px;
+    
+}
+
+.container-ficheiro {
+    background: var(--azulMaisEscuro);
     display: grid;
     width: 100%;
     grid-auto-flow: column;
     grid-template-columns: auto auto auto;
     grid-template-rows: auto auto;
     grid-gap: 10px;
-    padding: 10px;
-    
+    padding: 10px;  
 }
 
 .ficheiro {
-    background: red;
-    width: 100%;
+    display: grid;
+    place-items: start end;
     border-radius: 10px;
+}
+
+.ficheiro-work {
+    background: var(--vermelhoClaro);
+}
+
+.ficheiro-play {
+    background: var(--azulFraco);
+}
+
+.ficheiro-study {
+    background: var(--rosado);
+}
+
+.ficheiro-exercise {
+    background: var(--verdeLimao);
+}
+
+.ficheiro-social {
+    background: var(--purple);
+}
+
+.ficheiro-self-care {
+    background: var(--laranjaFraco);
+}
+
+.icon-imagem {
+    width: 15%;
+}
+
+.pontos-img {
+    padding-left: 45%;
+}
+
+.caixa-geral {
+    display: flex;
+    width: 100%;
+    background: var(--azulEscuro);
+    flex-direction: column;
+    border-radius: 10px;
+    height: 100%;
     padding: 10%;
     box-sizing: border-box;
 }
 
+.caixa-geral h2 {
+    color: var(--corBranca);
+    font-weight: 500;
+}
+
+.caixa-geral h3 {
+    font-weight: 300;
+    font-size: 2.5em;
+    padding: 10% 10% 8% 0;
+}
+
+.caixa-geral p {
+    font-weight: 300;
+}
+
+.header-atividade {
+    display: flex;
+    width: 100%; 
+    justify-content: space-between;
+}
+
+.atividade-anterior {
+    display: flex;
+    justify-content: space-between;
+}
+
+.atividade-anterior p {
+    color: var(--azulPalido);
+}
+
+.atividade h3 {
+    color: var(--corBranca);
+}
+
+.h2 {
+    color: var(--corBranca);
+}
+
+@media(max-width: 768px) {
+
+    .main-container {
+        flex-direction: column;
+    }
+
+    .container-ficheiro {
+        grid-auto-flow: row;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-gap: 15px;
+        padding: 20px 15px 20px 15px;
+    }
+}
