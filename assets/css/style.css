@@ -16,6 +16,7 @@
     --laranjaFraco: hsl(43, 84%, 65%); /*seld-care*/
 }
 
+/* configurações de estilo gerais */
 html {
     background: var(--azulMaisEscuro);
     font-family: 'Rubik', sans-serif;
@@ -57,10 +58,26 @@ html {
 .tempo {
     display: flex;
     flex-direction: column;
+    justify-content: space-evenly;
+    padding-left: 10%;
     background: var(--azulEscuro);
     height: 100%;
-    border-radius: 10px;
-    
+    border-radius: 10px;  
+}
+
+.agenda-bt {
+    background: var(--azulEscuro);
+    color: var(--azulRocheado);
+    border-style: none;
+    text-align: left;
+}
+
+.agenda-bt:hover {
+    color: var(--corBranca);
+}
+
+.agenda-bt:focus {
+    color: var(--corBranca);
 }
 
 .container-ficheiro {
@@ -78,6 +95,10 @@ html {
     display: grid;
     place-items: start end;
     border-radius: 10px;
+}
+
+.ficheiro:hover {
+    transform: scale(1.05);
 }
 
 .ficheiro-work {
@@ -169,9 +190,22 @@ html {
 
     .container-ficheiro {
         grid-auto-flow: row;
-        grid-template-columns: auto;
+        grid-template-columns: 100%;
         grid-template-rows: auto;
         grid-gap: 15px;
-        padding: 20px 15px 20px 15px;
+        padding: 20px 0 20px 0;
+        margin: 0 auto;
+    }
+
+    .info-pessoal h1 {
+        font-size: 1.8em;
+    }
+
+    .tempo {
+        padding: 10%;
+    }
+
+    .agenda-bt {
+        padding: 5%;
     }
 }
