@@ -16,7 +16,7 @@
     --laranjaFraco: hsl(43, 84%, 65%); /*seld-care*/
 }
 
-/* configurações de estilo gerais */
+/* Configurações de estilo gerais */
 html {
     background: var(--azulMaisEscuro);
     font-family: 'Rubik', sans-serif;
@@ -29,6 +29,7 @@ html {
     margin-top: 5%;  
 }
 
+/* Informacoes pessoais do Jeremy */
 .perfil {
     display: flex;
     flex-direction: column;
@@ -55,6 +56,7 @@ html {
     font-size: 2em;
 }
 
+/* Botoes */
 .tempo {
     display: flex;
     flex-direction: column;
@@ -72,6 +74,7 @@ html {
     text-align: left;
 }
 
+/* Mudanca de status dos botoes */
 .agenda-bt:hover {
     color: var(--corBranca);
 }
@@ -80,6 +83,7 @@ html {
     color: var(--corBranca);
 }
 
+/* Blocos/ficheiros de atividades em grid */
 .container-ficheiro {
     background: var(--azulMaisEscuro);
     display: grid;
@@ -97,10 +101,12 @@ html {
     border-radius: 10px;
 }
 
+/* Mudanca de status dos ficheiros */
 .ficheiro:hover {
     transform: scale(1.05);
 }
 
+/* addiciona cores de cada ficheiro */
 .ficheiro-work {
     background: var(--vermelhoClaro);
 }
@@ -125,6 +131,7 @@ html {
     background: var(--laranjaFraco);
 }
 
+/* configura imagens */
 .icon-imagem {
     width: 15%;
 }
@@ -144,6 +151,7 @@ html {
     box-sizing: border-box;
 }
 
+/* Fontes/textos dos ficheiros */
 .caixa-geral h2 {
     color: var(--corBranca);
     font-weight: 500;
@@ -182,6 +190,7 @@ html {
     color: var(--corBranca);
 }
 
+/* Responsividade para mobile */
 @media(max-width: 768px) {
 
     .main-container {
