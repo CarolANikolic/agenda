@@ -19,7 +19,7 @@ Para trabalhar com esse código você precisará, antes de começar, instalar em
 * **Érica Almeida** - [GitHub da Érica ](https://github.com/EricaAlmeid)
 
 #### Confira online:  [Agenda](agenda-master.netlify.app)
-#### Projeto baseado em challange da plataforma [Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw).
+#### Projeto baseado em challenge da plataforma [Frontend Mentor](https://www.frontendmentor.io/challenges/time-tracking-dashboard-UIQ7167Jw).
 ---
 ⌨️ com ❤️ por [Carol ANikolic](https://github.com/CarolANikolic) 😊
 ⌨️ com ❤️ por [Erica Almeida](https://github.com/EricaAlmeid) 😊
